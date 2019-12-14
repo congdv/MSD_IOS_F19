@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week12_Lab8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vap-Q6-8fC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="333.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nH3-0c-rlk">
+                                        <rect key="frame" x="37.5" y="156.5" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensor Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KB-St-jfj">
+                                        <rect key="frame" x="37.5" y="30" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nH3-0c-rlk" firstAttribute="centerX" secondItem="Vap-Q6-8fC" secondAttribute="centerX" id="FoW-yU-QEU"/>
+                                    <constraint firstItem="nH3-0c-rlk" firstAttribute="centerY" secondItem="Vap-Q6-8fC" secondAttribute="centerY" id="PpL-di-eq8"/>
+                                    <constraint firstItem="3KB-St-jfj" firstAttribute="centerX" secondItem="Vap-Q6-8fC" secondAttribute="centerX" id="Vth-qB-flh"/>
+                                    <constraint firstItem="nH3-0c-rlk" firstAttribute="width" secondItem="Vap-Q6-8fC" secondAttribute="width" multiplier="0.8" id="aLy-0z-zP5"/>
+                                    <constraint firstItem="3KB-St-jfj" firstAttribute="top" secondItem="Vap-Q6-8fC" secondAttribute="top" constant="30" id="snF-ip-5CR"/>
+                                    <constraint firstItem="3KB-St-jfj" firstAttribute="width" secondItem="Vap-Q6-8fC" secondAttribute="width" multiplier="0.8" id="sqe-25-1Up"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UA-Mm-Z0e">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Typing Orientation status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-j1-7se">
+                                        <rect key="frame" x="37.5" y="263" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Orientation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmY-JJ-HmD">
+                                        <rect key="frame" x="37.5" y="50" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TY6-j1-7se" firstAttribute="centerX" secondItem="0UA-Mm-Z0e" secondAttribute="centerX" id="0i5-xg-feB"/>
+                                    <constraint firstItem="HmY-JJ-HmD" firstAttribute="top" secondItem="0UA-Mm-Z0e" secondAttribute="top" constant="50" id="2fu-cx-T51"/>
+                                    <constraint firstItem="HmY-JJ-HmD" firstAttribute="centerX" secondItem="0UA-Mm-Z0e" secondAttribute="centerX" id="FtL-BE-4eV"/>
+                                    <constraint firstAttribute="bottom" secondItem="TY6-j1-7se" secondAttribute="bottom" constant="50" id="JlW-SX-uLy"/>
+                                    <constraint firstItem="TY6-j1-7se" firstAttribute="width" secondItem="0UA-Mm-Z0e" secondAttribute="width" multiplier="0.8" id="O2i-IL-tVh"/>
+                                    <constraint firstItem="HmY-JJ-HmD" firstAttribute="width" secondItem="0UA-Mm-Z0e" secondAttribute="width" multiplier="0.8" id="uDS-PY-CKA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0UA-Mm-Z0e" secondAttribute="bottom" id="6A0-9N-FSd"/>
+                            <constraint firstItem="0UA-Mm-Z0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Xv-3y-UMh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vap-Q6-8fC" secondAttribute="trailing" id="8bf-ob-FLg"/>
+                            <constraint firstItem="Vap-Q6-8fC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8ly-xo-9mU"/>
+                            <constraint firstItem="Vap-Q6-8fC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="CBr-7X-2qt"/>
+                            <constraint firstItem="0UA-Mm-Z0e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hh1-GT-1fg"/>
+                            <constraint firstItem="0UA-Mm-Z0e" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Wuv-Hs-P9Q"/>
+                            <constraint firstItem="Vap-Q6-8fC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z31-li-NoP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblPhoneOrientation" destination="HmY-JJ-HmD" id="IFA-WL-eZM"/>
+                        <outlet property="lblPickUpStatus" destination="nH3-0c-rlk" id="YVU-Uq-GA5"/>
+                        <outlet property="lblSensorData" destination="3KB-St-jfj" id="wHZ-Xe-b75"/>
+                        <outlet property="lblTypingOrientationStatus" destination="TY6-j1-7se" id="COf-ew-xpN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

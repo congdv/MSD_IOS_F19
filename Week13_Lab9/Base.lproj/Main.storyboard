@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week13_Lab9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-2c-S8o" userLabel="UperView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Orientation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orp-9Z-ucL">
+                                        <rect key="frame" x="75" y="123" width="225" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="orp-9Z-ucL" firstAttribute="centerY" secondItem="OUc-2c-S8o" secondAttribute="centerY" id="ZUr-6e-RIv"/>
+                                    <constraint firstItem="orp-9Z-ucL" firstAttribute="centerX" secondItem="OUc-2c-S8o" secondAttribute="centerX" id="jkP-xY-bx0"/>
+                                    <constraint firstItem="orp-9Z-ucL" firstAttribute="width" secondItem="OUc-2c-S8o" secondAttribute="width" multiplier="0.6" id="plL-PA-dDw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V62-EW-IUw" userLabel="LowerView">
+                                <rect key="frame" x="0.0" y="267" width="375" height="400"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGp-Jh-Bdr" customClass="BarChartView" customModule="Charts">
+                                        <rect key="frame" x="37.5" y="0.0" width="300" height="280"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BGp-Jh-Bdr" firstAttribute="height" secondItem="V62-EW-IUw" secondAttribute="height" multiplier="0.7" id="Bw5-e3-X5C"/>
+                                    <constraint firstItem="BGp-Jh-Bdr" firstAttribute="centerX" secondItem="V62-EW-IUw" secondAttribute="centerX" id="G7f-rL-AV6"/>
+                                    <constraint firstItem="BGp-Jh-Bdr" firstAttribute="top" secondItem="V62-EW-IUw" secondAttribute="top" id="nwf-BC-0TV"/>
+                                    <constraint firstItem="BGp-Jh-Bdr" firstAttribute="width" secondItem="V62-EW-IUw" secondAttribute="width" multiplier="0.8" id="oaM-f1-3xN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OUc-2c-S8o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JoV-SF-91g"/>
+                            <constraint firstItem="OUc-2c-S8o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K0O-Jp-KHO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V62-EW-IUw" secondAttribute="bottom" id="cr0-hI-ted"/>
+                            <constraint firstItem="V62-EW-IUw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="fgi-1r-avj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V62-EW-IUw" secondAttribute="trailing" id="kfM-eh-K1G"/>
+                            <constraint firstItem="V62-EW-IUw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="l7L-hV-g2W"/>
+                            <constraint firstItem="V62-EW-IUw" firstAttribute="top" secondItem="OUc-2c-S8o" secondAttribute="bottom" id="rOi-Ct-I27"/>
+                            <constraint firstItem="OUc-2c-S8o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rTH-XG-XsY"/>
+                            <constraint firstItem="V62-EW-IUw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wWQ-kD-w1b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gravityBarChartView" destination="BGp-Jh-Bdr" id="TsP-pk-FKW"/>
+                        <outlet property="lblPhoneOrientation" destination="orp-9Z-ucL" id="dun-Bj-Xbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>

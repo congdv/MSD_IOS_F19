@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DarkSkyKit (0.0.6):
+    - Alamofire (~> 4.0)
+
+DEPENDENCIES:
+  - DarkSkyKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DarkSkyKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DarkSkyKit: ae500687161b11e1f352cdf261ff620fe3837cf5
+
+PODFILE CHECKSUM: 4f342c2f22a85ab0565395146b084fa24208fc9c
+
+COCOAPODS: 1.8.4
